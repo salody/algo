@@ -37,10 +37,10 @@ class SinglyList {
     let j = 1;
     while (thisNode && j < index) {
       thisNode = thisNode.next;
-      j++
+      j++;
     }
     if (!thisNode || j > i) {
-      throw Error('wrong!')
+      throw Error("wrong!");
     }
     return thisNode;
   }
@@ -50,12 +50,12 @@ class SinglyList {
    */
   find(data) {
     let thisNode = this.head;
-    while(thisNode) {
+    while (thisNode) {
       if (thisNode.data === data) {
-        return thisNode
+        return thisNode;
       }
-      thisNode = thisNode.next
+      thisNode = thisNode.next;
     }
-    return thisNode // when undefined
+    return thisNode; // when undefined
   }
 }
