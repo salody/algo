@@ -21,7 +21,7 @@ class List {
    * 因为直接记录了元素的地址，所以获取元素实际上是很快的
    * 获取元素的时间复杂度是O(1)!
    */
-
+  
   getAtIndex(index) {
     return this.data[index];
   }
